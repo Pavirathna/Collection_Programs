@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Theatre {
     private final String theatreName;
-    private List<Seat> seats=new ArrayList<>();
+    public List<Seat> seats=new ArrayList<>();
 
 
     public Theatre(String theatreName,int numRows,int seatPerRow){
@@ -34,6 +34,10 @@ public class Theatre {
             int mid =(low+high)/2;
             Seat midVal=seats.get(mid);
             int cmp=midVal.getSeatNumber().compareTo(seatNumber);
+          //  System.out.println(midVal);
+           // System.out.println("get"+midVal.getSeatNumber());
+          //  System.out.println("mid"+midVal.getSeatNumber().compareTo(seatNumber));
+          //  System.out.println("cmp"+cmp);
             if(cmp<0)
             {
                 low =mid+1;
@@ -73,12 +77,14 @@ public class Theatre {
     }
 
     public void getSeats(){
+       // int count=0;
         for(Seat seat:seats){
             System.out.println(seat.getSeatNumber());
+           // System.out.println(count++);
         }
     }
 
-    private class Seat implements Comparable<Seat>{
+    public class Seat implements Comparable<Seat>{
         private final String seatNumber;
         private boolean reserved=false;
 
@@ -92,7 +98,7 @@ public class Theatre {
         public boolean reserve(){
             if(!this.reserved){
                 this.reserved=true;
-                System.out.println("Seat"+ seatNumber +"reserved");
+                System.out.println("Seat "+ seatNumber +" reserved");
                 return true;
             }else
                 return false;
