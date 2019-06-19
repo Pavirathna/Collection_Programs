@@ -34,8 +34,8 @@ public class Example_Stack {
             switch (check) {
                 case 1:
                     System.out.println("enter the character to be pushed ");
-                    char c=sc.next().charAt(0);
-                    st_push(st,c);
+                    char c = sc.next().charAt(0);
+                    st_push(st, c);
                     System.out.println("Pushed Successfully");
                     break;
                 case 2:
@@ -43,7 +43,7 @@ public class Example_Stack {
                     System.out.println("Pop_up");
                     break;
                 case 3:
-                    System.out.println("PeeK "+ st.peek());
+                    System.out.println("PeeK " + st.peek());
                     break;
                 case 4:
                     System.out.println("Is Stack empty : " + st.empty());
@@ -77,20 +77,18 @@ public class Example_Stack {
     }
 
 
-    static  void st_push(Stack<Character>st,char insert)
-    {
+    static void st_push(Stack<Character> st, char insert) {
 
         st.push(insert);
-        for(char i='a';i<'z';i++){
+        for (char i = 'a'; i < 'z'; i++) {
             st.push(i);
         }
 
 
     }
 
-    static void st_pop(Stack<Character>st)
-    {
-        System.out.println(" pop:"+st.pop());
+    static void st_pop(Stack<Character> st) {
+        System.out.println(" pop:" + st.pop());
 
            /* for(int i='A';i<'e';i++)
             {
@@ -100,21 +98,19 @@ public class Example_Stack {
     }
 
     // Displaying element on the top of the stack
-    static void st_peek(Stack<Character> st)
-    {
+    static void st_peek(Stack<Character> st) {
         Character element = (Character) st.peek();
         System.out.println("Element on stack top : " + element);
     }
 
     // Searching element in the stack
-    static void st_search(Stack<Character> st, Character element)
-    {
-        int  pos = st.search(element);
+    static void st_search(Stack<Character> st, Character element) {
+        int pos = st.search(element);
 
-        if(pos == -1)
-            System.out.println("Element not found "+element);
+        if (pos == -1)
+            System.out.println("Element not found " + element);
         else
-            System.out.println("Element is found "+pos);
+            System.out.println("Element is found " + pos);
     }
 
 }
