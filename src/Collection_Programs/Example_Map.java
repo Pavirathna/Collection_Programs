@@ -11,24 +11,25 @@ public class Example_Map {
         m.put(25,"Aa");
         m.put(22,"va");
         System.out.println("Map Elements"+"\n"+m);
-        HashMap<Character,Integer> hm = new HashMap<>();
+        HashMap<Integer,Character> hm = new HashMap<>();
         Scanner sc=new Scanner(System.in);
         st_push(hm);
 
     }
-    static void st_push(HashMap<Character,Integer> hm) {
+    static void st_push(HashMap<Integer,Character> hm) {
 
       //  hm.put(insert);
         int j=1;
 
         for (char i = 'a'; i <= 'b'; i++) {
-            for(j=0;j<=5;j++){
-            hm.put(i,j);
-
+            for(j=0;j<3;j++){
+            hm.put(j,i);
+                System.out.println(hm);
         }
-
-
     }
-
-        System.out.println(hm);
+        for(int i=0;i<=hm.size()-1;i++)
+        {
+            System.out.println( hm.get(i));
+        }
+        System.out.println("hm"+hm);
 }}
