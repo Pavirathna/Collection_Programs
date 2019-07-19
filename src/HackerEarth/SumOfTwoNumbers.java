@@ -11,7 +11,6 @@ public class SumOfTwoNumbers {
         int num2 = s.nextInt(); // Get second integer
 
         int sum = 0;
-        // Write the logic to add these integers here
         sum=num1+num2;
 
         // Print the sum
