@@ -15,7 +15,6 @@ public class demo {
         addInOrder(placesToVisit,"China");
         addInOrder(placesToVisit,"Nepal");
         printList(placesToVisit);
-
         addInOrder(placesToVisit,"Washington");
         addInOrder(placesToVisit,"japan");
         printList(placesToVisit);
@@ -95,7 +94,7 @@ public class demo {
         if(cities.getFirst()=="" ){
             System.out.println("No Cities in the  itenerary");
             return;
-            }else{
+        }else{
             System.out.println(" Now Visiting "+ listIterator.next());
             printMenu();
         }
@@ -136,8 +135,8 @@ public class demo {
                 case 3:
                     printMenu();
                     break;
-                    default:
-                        System.out.println("Invalid Value");
+                default:
+                    System.out.println("Invalid Value");
             }
         }
     }
@@ -148,4 +147,4 @@ public class demo {
                 "3 - print menu options\n"+
                 "0- quit ");
     }
-    }
+}

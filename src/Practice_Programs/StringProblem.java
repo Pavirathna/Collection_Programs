@@ -3,7 +3,7 @@ package Practice_Programs;
 import java.util.Scanner;
 
 public class StringProblem {
-   private static  Scanner sc=new Scanner(System.in);
+    private static  Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter the String :");
         String s=sc.next();
@@ -13,16 +13,16 @@ public class StringProblem {
     public static void StringRearrange(String s)
     {
         char[]ss=s.toCharArray();
-        String ReverseString="";
+        String reverseString="";
         int lenghtOfString=ss.length-1;
         int j=2;
         int k=j-1;
         for(int i=lenghtOfString;i>=0;i--)
         {
-            ReverseString+=  ss[i];
+            reverseString+=  ss[i];
         }
-      //  int j=2;
-        if(ReverseString.equals(s))
+        //  int j=2;
+        if(reverseString.equals(s))
         {
             System.out.println("Its not possible to rearrange");
         }
@@ -40,6 +40,6 @@ public class StringProblem {
             j++;*/
         }
 
-        }
     }
 }
+

@@ -1,6 +1,7 @@
 package Collection_Programs;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Theatre {
     private final String theatreName;
@@ -15,8 +16,8 @@ public class Theatre {
             for(int  seatNum=1;seatNum<=seatPerRow;seatNum++)
             {
                 //Seat seat=new Seat(seatNum);
-              Seat seat=new Seat(row+String.format("%02d",seatNum));
-              seats.add(seat);
+                Seat seat=new Seat(row+String.format("%02d",seatNum));
+                seats.add(seat);
             }
         }
     }
@@ -34,10 +35,10 @@ public class Theatre {
             int mid =(low+high)/2;
             Seat midVal=seats.get(mid);
             int cmp=midVal.getSeatNumber().compareTo(seatNumber);
-          //  System.out.println(midVal);
-           // System.out.println("get"+midVal.getSeatNumber());
-          //  System.out.println("mid"+midVal.getSeatNumber().compareTo(seatNumber));
-          //  System.out.println("cmp"+cmp);
+            //  System.out.println(midVal);
+            // System.out.println("get"+midVal.getSeatNumber());
+            //  System.out.println("mid"+midVal.getSeatNumber().compareTo(seatNumber));
+            //  System.out.println("cmp"+cmp);
             if(cmp<0)
             {
                 low =mid+1;
@@ -77,10 +78,10 @@ public class Theatre {
     }
 
     public void getSeats(){
-       // int count=0;
+        // int count=0;
         for(Seat seat:seats){
             System.out.println(seat.getSeatNumber());
-           // System.out.println(count++);
+            // System.out.println(count++);
         }
     }
 

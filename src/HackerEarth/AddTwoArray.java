@@ -25,25 +25,25 @@ public class AddTwoArray {
 
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner ( System.in );
 
         // Reading integer from input
-        System.out.println("Enter Numbers in array :");
-        int N = s.nextInt();
+        System.out.println ( "Enter Numbers in array :" );
+        int num = s.nextInt ();
 
-        int[] numArrayA = new int[N];
-        int[] numArrayB = new int[N];
-        int[] sumArray = new int[N];
+        int[] numArrayA = new int[num];
+        int[] numArrayB = new int[num];
+        int[] sumArray = new int[num];
 
         // Read numArray1
-        System.out.println("enter 1st array value :");
-        for(int i=0; i<N; i++) {
-            numArrayA[i] = s.nextInt();
+        System.out.println ( "enter 1st array value :" );
+        for (int i = 0; i < num; i++) {
+            numArrayA[i] = s.nextInt ();
         }
         // Read numArray2
-        System.out.println("enter 2nd array value :");
-        for(int i=0; i<N; i++) {
-            numArrayB[i] = s.nextInt();
+        System.out.println ( "enter 2nd array value :" );
+        for (int i = 0; i < num; i++) {
+            numArrayB[i] = s.nextInt ();
         }
 
         // Write your logic here:
@@ -57,21 +57,15 @@ public class AddTwoArray {
 		            sumArray[k]=numArrayA[i]+numArrayB[j];*/
 
 
-        for(int i=0;i<N;i++)
-            sumArray[i] = numArrayA[i]+numArrayB[i];
-
-
-
-
+        for (int i = 0; i < num; i++)
+            sumArray[i] = numArrayA[i] + numArrayB[i];
 
         // Print the sumArray
-        for(int i=0; i<N; i++) {
-            System.out.print(sumArray[i] + " ");
+        for (int i = 0; i < num; i++) {
+            System.out.print ( sumArray[i] + " " );
         }
-
-        System.out.println();
-        s.close();
-
+        System.out.println ();
+        s.close ();
     }
 
 }
