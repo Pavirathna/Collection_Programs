@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class SumOfTwoNumbers {
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner ( System.in );
 
-        int num1 = s.nextInt(); // Get first integer
-        int num2 = s.nextInt(); // Get second integer
+        int num1 = s.nextInt (); // Get first integer
+        int num2 = s.nextInt (); // Get second integer
 
-        int sum = 0;
-        sum=num1+num2;
+
+        int sum = num1 + num2;
 
         // Print the sum
-        System.out.println(sum);
-        s.close();
+        System.out.println ( sum );
+        s.close ();
     }
 
 }
