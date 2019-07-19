@@ -24,9 +24,9 @@ public class PrimeNumber {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter N value :");
         System.out.println();
-        int N=sc.nextInt();
-        if((N>=1)&&(N<=1000)) {
-            for (int i = 2; i < N; i++) {
+        int num=sc.nextInt();
+        if((num>=1)&&(num<=1000)) {
+            for (int i = 2; i < num; i++) {
                 if (isPrime(i)) {
                     System.out.print(i + " ");
                 }
