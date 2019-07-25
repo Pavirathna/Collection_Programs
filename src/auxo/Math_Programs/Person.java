@@ -1,4 +1,4 @@
-package auxo;
+package auxo.Math_Programs;
 /*Write a class with the name Person. The class needs three fields (instance variables) with the names firstName, lastName of type String and age of type int.
 
 Write the following methods (instance methods):
